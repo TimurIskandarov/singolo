@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Bold.ttf');
+}
+
+body, html {
+    /* margin: 0 auto; */
+    width: 1020px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 89px;
+    background-color: #2d303a;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.h1 {
+    /* size */
+    width: 115px;
+    height: 20px;
+    /* shift */
+    position: relative;
+    top: 30px;
+    /* font */
+    font-family: "Lato";
+    font-size: 23px;
+    letter-spacing: 0.25pt;
+    color: #ffffff;
+    /* overlay */
+    overflow: visible;
+}
+
+.asterisk {
+    color: #f06c64;
+}
+
+.list {
+    border: 1px solid #2d303a;
+    margin-left: 15px;
+    margin-right: 2px;
+    padding: 5px;
+    /* shift */
+    position: relative;
+    top: 0px;
+    left: 507px;
+    /* font */
+    font-family: "Lato";
+    font-size: 12px;
+    color: #494e62;
+    letter-spacing: 0.01pt;
+    float: left;
+}
+
+.list_colored {
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    color: #f06c64;
+}
+
+.header-bottom {
+    background-color: #323746;
+    width: 100%;
+    height: 6px;
+    position: relative;
+    top: 53px;
+}
+
+/* MAIN */
+
+.slider {
+    width: 100%;
+    height: 600px;
+    background-color: #f06c64;
+    /* shift */
+    position: relative;
+    top: 6px;
+}
+
+.main_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* size */
+    width: 940px;
+    /* shift */
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow {
+    border: solid #ca4549;
+    border-width: 0 5px 5px 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 5px;
+    border-radius: 2px;
+}
+
+.arrow_left {
+    left:4px;
+    transform: rotate(135deg);
+}
+
+.arrow_right {
+    right: 2px;;
+    transform: rotate(-45deg);
+}
+
+.iphone {
+    border-radius: 28px;
+    background-color: #f2f2f2;
+    /* size */
+    width: 215px;
+    height: 458px;
+    /* shift */
+    position: relative;
+    bottom: 19px;
+}
+
+.iphone_wrapper {
+    width: 215px;
+    height: 458px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphone_vertical {
+    right: 105px;
+}
+
+.iphone_horizontal {    
+    transform: rotate(90deg);
+    right: 42px;
+}
+
+.cam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* size */
+    width: 100%;
+    height: 25px;
+    /* shift */
+    position: relative;
+    top: -10px;
+    /* background-color: green; */
+}
+
+.outer-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #eb5055;
+}
+
+.speaker {
+    width: 36px;
+    height: 5px;
+    background-color: #acacac;
+    border-radius: 3px;
+}
+
+.screen-layout {
+    border: 2px solid #c6c6c6;
+    background-color: #c6c6c6;
+    /* size */
+    width: 188px;
+    height: 333px;
+    /* shift */
+    position: relative;
+    top: 12px;
+    left: 1px;
+}
+
+.screen_vertical {
+    background: url('./assets/images/v_screen_layout.png') center no-repeat;
+    width: 100%;
+    height: 100%; 
+}
+
+.screen_horizontal {
+    background: url('./assets/images/h_screen_layout.png') center no-repeat;
+    transform: rotate(-90deg);
+    width: 337px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -75px;
+}
+
+.button_vertical {
+    position: relative;
+    top: 19px;
+}
+
+.button_horizontal {
+    position: relative;
+    top: 18px;
+}
+
+.circle {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #fafafa;     
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #c2c2c2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
+.shadow {
+    top: 0;                    
+    position: absolute;
+    z-index: 1;
+}
+
+.shadow_vertical {
+    left: 0;
+    width: 240px;
+    height: 483px;
+    background-image: url('./assets/images/v_phone_shadow.png');
+}
+
+.shadow_horizontal {                    
+    width: 483px;
+    height: 240px;
+    transform: rotate(90deg);
+    top: 96px;
+    left: -122px;
+    background-image: url('./assets/images/h_phone_shadow.png');
+}
+
+

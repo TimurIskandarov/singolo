@@ -1,87 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./singolo1.css">
     <title>Singolo</title>
 </head>
+
 <body>
+
     <header class="header">
+
         <div class="wrapper">
-            <a href="#" class="logo">Logo</a>
-            <nav class="header_navigation">
+            <h1 class="h1">SINGOLO<span class="asterisk">*</span></h1>
+            <nav class="header__navigation">
                 <ul class="navigation">
-                    <li>HOME</li>
-                    <li>SERVICES</li>
-                    <li>PORTFOLIO</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
+                    <li class="list list_colored"><a href="#">HOME</a></li>
+                    <li class="list"><a href="#">SERVICES</a></li>
+                    <li class="list"><a href="#">PORTFOLIO</a></li>
+                    <li class="list"><a href="#">ABOUT</a></li>
+                    <li class="list"><a href="#">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="header-bottom"></div>
         </div>
+        <div class="header-bottom"></div>
+
     </header>
+
     <section class="slider">
-        <div class="wrapper">
-            <a href="#"><button class="arrow prev_button"></button></a>
-            <div class="iphone__content">
-                <!-- iPhone Vertical -->
-                <div class="iphone-vertical">
-                    <!-- Base -->
-                    <div class="base-vertical">
+
+        <div class="main_wrapper">
+
+            <a href="#"><div class="arrow arrow_left"></div></a>
+
+            <div class="iphone iphone_vertical">
+
+                <!-- iPhone without Shadow -->
+                <div class="iphone_wrapper">
+
+                    <!-- Head -->
+                    <div class="cam">
                         <!-- Cam -->
-                        <div class="cam__vertical">
-                            <div class="outer-circle circle_vertical">
-                                <div class="dot dot_colored"></div>
-                            </div>
+                        <div class="outer-circle circle_vertical">
+                            <div class="dot dot_colored"></div>
                         </div>
                         <!-- Speaker -->
-                        <div class="speaker-vertical"></div>
-                        <!-- Screen -->
-                        <div class="screen_layout">
-                            <div class="screen screen_vertical"></div>                
-                        </div>
-                        <!-- Home Button -->
-                        <div class="home-button__vertical">
-                            <div class="circle circle_vertical">
-                                <div class="square square_vertical"></div>
-                            </div>
-                        </div>
-                        <!-- Shadow iPhone -->
-                        <div class="shadow shadow_vertical"></div>
+                        <div class="speaker"></div>
                     </div>
-                </div>
-                <!-- iPhone Horizontal -->
-                <div class="iphone-horizontal">
-                    <!-- Base -->
-                    <div class="base-horizontal">
-                        <!-- Cam -->
-                        <div class="cam__horizontal">
-                            <div class="outer-circle circle_horizontal">
-                                <div class="dot dot_colored"></div>
-                            </div>
-                        </div>
-                        <!-- Speaker -->
-                        <div class="speaker-horizontal"></div>
-                        <!-- Screen -->
-                        <div class="screen_layout">
-                            <div class="screen screen_horizontal"></div>                
-                        </div>
-                        <!-- Home Button -->
-                        <div class="home-button__horizontal">
-                            <div class="circle circle_horizontal">
-                                <div class="square square_horizontal"></div>
-                            </div>
-                        </div>
-                        <!-- Shadow iPhone -->
-                        <div class="shadow shadow_horizontal"></div>
+
+                    <!-- Main -->
+                    <div class="screen-layout">
+                        <div class="screen screen_vertical"></div>                
                     </div>
+
+                    <!-- Footer -->
+                    <div class="home-button button_vertical">
+                        <div class="circle circle_vertical">
+                            <div class="square square_vertical"></div>
+                        </div>
+                    </div>
+                
                 </div>
+
+                <!-- iPhone Shadow -->
+                <div class="shadow shadow_vertical"></div>
+
             </div>
-            <a href="#"><button class="arrow next_button"></button></a>
-            <div class="main-bottom"></div>
+
+            <div class="iphone iphone_horizontal">
+
+                <!-- iPhone without Shadow -->
+                <div class="iphone_wrapper">
+                    
+                    <!-- Head -->
+                    <div class="cam">
+                        <!-- Cam -->
+                        <div class="outer-circle circle_horizontal">
+                            <div class="dot dot_colored"></div>
+                        </div>
+                        <!-- Speaker -->
+                    <div class="speaker"></div>
+                    </div>
+
+                    <!-- Main -->
+                    <div class="screen-layout">
+                        <div class="screen screen_horizontal"></div>                
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="home-button button_horizontal">
+                        <div class="circle circle_horizontal">
+                            <div class="square square_horizontal"></div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- iPhone Shadow -->
+                <div class="shadow shadow_horizontal"></div>
+
+            </div>
+
+            <a href="#"><div class="arrow arrow_right"></div></a>
         </div>
+        <div class="main-bottom"></div>
+
     </section>
+
     <section class="services">
         <div class="wrapper">
             <div class="head-services">
