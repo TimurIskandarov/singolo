@@ -275,4 +275,49 @@ body, html {
     background-image: url('./assets/images/h_phone_shadow.png');
 }
 
+.main-bottom {
+    width: 100%;
+    height: 14px;
+    background-color: #ea676b;
+    position: absolute;
+    top: 99%;
+}
 
+/* FOOTER */
+
+.service {
+    width: 100%;
+    height: 496px;
+    background-color: #f2f2f2;
+    position: relative;
+    top: 6px;
+}
+    .service_footer {
+        height: 100%;
+    }
+    /* .bg_line_service {
+        width: 100%;
+        background-color: #ffffff;
+        height: 6px;
+        top: 100%;
+        position: absolute;
+    } */
+    .service_wrapper {
+        width: 940px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }  
+        .h2_service {
+            font-family: 'Lato-Black';
+            margin-top: 59px;
+            font-size: 30px;
+            margin-bottom: 21px;
+            text-align: justify;
+        }
+        .p_service {            
+            font-family: 'Lato-Light';
+            font-size: 13pt;
+            line-height: 27px;
+            text-align: justify;
+        }
