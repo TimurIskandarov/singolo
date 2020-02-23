@@ -331,3 +331,113 @@ body, html {
     line-height: 27px;
     text-align: justify;
 }
+
+.wrapper_support {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;            
+    padding: 0;
+    margin: 0;
+    top: 32px;
+    row-gap: 31px;
+    column-gap: 20px;
+}
+
+.service_circle {            
+    min-width: 59px;
+    min-height: 59px;
+    max-width: 59px;
+    max-height: 59px;
+    background: url('./assets/images/Ellipse.png') no-repeat center;
+    position: relative;
+}
+
+.pen {
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./assets/images/pen.png') no-repeat center;
+    position: absolute;
+}
+
+.lamp {
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./assets/images/lamp.png') no-repeat center;
+    position: absolute;
+}
+
+.heart {
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./assets/images/heart.png') no-repeat center;
+    position: absolute;
+}
+
+.serv_phone {
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./assets/images/phone.png') no-repeat center;
+    position: absolute;
+}
+
+.bubble {
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./assets/images/bubble.png') no-repeat center;
+    position: absolute;
+}
+
+.star {
+    width: 32px;
+    height: 32px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: url('./assets/images/star.png') no-repeat center;
+    position: absolute;
+}   
+
+h4 {
+    margin: 0;
+    font-family: 'Lato-Black';
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: -2px;
+}
+
+.text_service {
+    font-family: 'Lato-Regular';            
+    text-align: justify;
+    width: 220px;
+    height: 52px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.service_description {
+    margin-left: 20px;
+}
+
+.item_service {
+    text-align: justify;
+    width: 300px;
+    display: flex;
+    line-height: 19px;
+    overflow: hidden;
+}
