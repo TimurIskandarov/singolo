@@ -118,7 +118,18 @@ html, body {
     column-gap: 17px;
 }
 
-img {
+.portfolio-picture {
     width: 223px;
-    height: 190px;
+    height: 190px;       
+}
+
+img {
+    width: 220px;
+    height: 187px;
+}
+
+.portfolio-picture img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 250ms ease-in-out;
 }
