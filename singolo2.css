@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('./assets/fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('./assets/fonts/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('./assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('./assets/fonts/Lato-Light.ttf');
+}
+
+html, body {
+    width: 1020px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.portfolio {
+    width: 100%;
+    height: 864px;
+    background-color:#2d303a;
+}
+
+.wrapper__portfolio {
+    width: 940px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+
+.title_portfolio {
+    margin-top: 69px;    
+    margin-bottom: 26px;
+    font-size: 29px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+}
+
+.title_description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato-Light", sans-serif;;
+    font-weight: 300;
+    letter-spacing: 0em;
+    margin: 0;
+}
+
+.tags {
+    margin-left: 1px;
+    margin-top: 11px;
+}
+
+.tag {
+    color: #767e9e;
+    background-color: #2d303a;
+    /* border */
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    /* fonts */
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    /* shift */
+    text-align: center;
+    margin-right: 10px;
+}
+
+.tag_1 {
+    padding: 0 6px 0 7px;
+    float: left;
+}
+
+.tag_2 {
+    padding: 0 6px 0 6px;
+    float: left;    
+}
+
+.tag_3 {
+    padding: 0 6px 0 5px;
+    float: left;
+}
+
+.tag_4 {
+    padding: 0 6px 0 5px;
+}
+
+.tag_1:hover,
+.tag_2:hover,
+.tag_3:hover,
+.tag_4:hover {
+    color: #dedede;
+    border: 1px solid #dedede;
+    transition: 500ms ease-in-out;
+    box-shadow: 0px 0px 2px 1px #767e9e;
+    cursor: pointer;
+}
+
+.portfolio__grid {
+    margin-top: 19px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    row-gap: 17px;
+    column-gap: 17px;
+}
+
+img {
+    width: 223px;
+    height: 190px;
+}
