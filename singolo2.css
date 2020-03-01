@@ -195,6 +195,8 @@ html, body {
 }
 
 .name__people {
+    max-height: 22px;
+    overflow: hidden;
     margin-top: 15px;
     margin-bottom: 0px;
     font-size: 18px;
@@ -206,7 +208,7 @@ html, body {
 
 .adam__description__1 {
     margin-top: 7px;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -227,7 +229,7 @@ html, body {
 
 .desmond__description__1 {
     margin-top: 7px;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -248,7 +250,7 @@ html, body {
 
 .scolara__description__1 {
     margin-top: 7px;
-    margin-bottom: 0px;
+    margin-bottom: -1px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
