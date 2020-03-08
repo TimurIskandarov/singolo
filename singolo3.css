@@ -104,6 +104,28 @@ textarea {
     letter-spacing: -0.01em;
 }
 
+.contact__button {
+    text-align: center;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #f0d8d9;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    background-color: turquoise;
+    box-shadow: 0px 0px 2px 1px black;
+}
+
+.button_colored {
+    background-color: #f0d8d9;
+}
+
 .contact__info h4 {
     margin-top: -1px;
     font-size: 18px;
@@ -177,4 +199,68 @@ textarea {
 footer {
     height: 76px;
     background-color: #2d303a;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo__footer {
+    margin-top: 28px;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #666d89;
+    font-family: "Lato";
+    letter-spacing: -0.01em;
+}
+
+.accounts__footer {
+    margin-top: 23px;
+    margin-right: -2px;
+}
+
+.accounts__footer li {
+    margin-right: 3px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #666d89;
+}
+
+.accounts__footer li:hover {
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.facebook_acc {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./assets/singolo2/images/social/f.png');
+}
+
+.google_acc {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./assets/singolo2/images/social/g.png');
+}
+
+.twitter_acc {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./assets/singolo2/images/social/t.png');
+}
+
+.linkedin_acc {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('./assets/singolo2/images/social/l.png');
 }
