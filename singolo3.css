@@ -104,6 +104,76 @@ textarea {
     letter-spacing: -0.01em;
 }
 
+.contact__info h4 {
+    margin-top: -1px;
+    font-size: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    letter-spacing: -0.019em;
+}
+
+.info-description-1 {
+    margin-top: -14px;
+    font-size: 12px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    letter-spacing: -0.013em;
+}
+
+.info-description-2 {
+    margin-top: -6px;
+    font-size: 12px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    letter-spacing: -0.01em;
+}
+
+.info-description-3 {
+    margin-top: -5px;
+    font-size: 12px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    letter-spacing: 0.004em;
+}
+
+.info-description-4 {
+    margin-top: -5px;
+    font-size: 12px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    letter-spacing: -0.013em;
+}
+
+.ico__info {
+    padding-top: 9px;
+    padding-left: 17px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+}
+
+.ico {
+    padding-left: 5px;
+}
+
+.ico_geo {
+    list-style-image: url('./assets/singolo3/geo.png');
+}
+
+.ico_phone {
+    list-style-image: url('./assets/singolo3/phone.png');
+}
+
+.ico_letter {
+    list-style-image: url('./assets/singolo3/letter.png');
+}
+
+.decoration {
+    text-decoration: none;
+    color: #f0d8d9;
+}
+
 footer {
     height: 76px;
     background-color: #2d303a;
