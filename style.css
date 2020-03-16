@@ -1090,10 +1090,13 @@ footer .wrapper {
 
 /* JS */
 
+/* navigation bar */
 .active {
     color: #f06c64; 
     transition-duration: 0.5s;
 }
+
+/* portfolio */
 
 .portfolio_active {
     background-color: blueviolet;
@@ -1102,4 +1105,30 @@ footer .wrapper {
 
 .pic_active {
     border: #F06C64 5px solid;
+}
+
+/* get a quote */
+
+.hidden__message {
+    display: none;
+}
+
+.message_block {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0008;    
+}
+
+.message_text {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    border: 2px solid black;
+    text-align: center;
+    background-color: wheat;
+    width: 300px;
+    height: 150px;
 }
