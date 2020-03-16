@@ -14,11 +14,11 @@
             <h1 class="h1">SINGOLO<span class="asterisk">*</span></h1>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="list list_colored"><a href="#">HOME</a></li>
-                    <li class="list"><a href="#">SERVICES</a></li>
-                    <li class="list"><a href="#">PORTFOLIO</a></li>
-                    <li class="list"><a href="#">ABOUT</a></li>
-                    <li class="list"><a href="#">CONTACT</a></li>
+                    <li class="list list_colored"><a class="clicked_nav" href="#home">HOME</a></li>
+                    <li class="list"><a class = "clicked_nav" href="#service">SERVICES</a></li>
+                    <li class="list"><a class = "clicked_nav" href="#portfolio">PORTFOLIO</a></li>
+                    <li class="list"><a class = "clicked_nav" href="#about">ABOUT</a></li>
+                    <li class="list"><a class = "clicked_nav" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,7 +26,7 @@
 
     </header>
 
-    <section class="slider">
+    <section class="slider" id="home">
 
         <div class="main_wrapper">
 
@@ -106,7 +106,7 @@
 
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
 
         <div class="service_wrapper">
 
@@ -269,7 +269,7 @@
 
     </section>
     
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
 
         <div class="wrapper__portfolio">
         
@@ -308,7 +308,7 @@
     </section>
 
     
-    <section class="about-us">
+    <section class="about-us" id="about">
         
         <div class="wrapper__about">
 
@@ -386,7 +386,7 @@
         <div class="bottom-about"></div>
     </section>
 
-    <section class="quote">
+    <section class="quote" id="contact">
 
         <div class="wrapper">
 
@@ -456,6 +456,6 @@
             </ol>
 
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

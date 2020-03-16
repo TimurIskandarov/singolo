@@ -18,21 +18,27 @@
     src: url('./assets/fonts/Lato-Light.ttf');
 }
 
+/* Singolo 1 */
+
 body, html {
     margin: 0 auto;
     width: 1020px;
 }
 
-/* HEADER */
+/* header */
 
 .header {
-    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    width: 1020px;
     height: 89px;
     background-color: #2d303a;
+    z-index: 3;
 }
 
 .wrapper {
     margin: 0 auto;
+    margin-top: -15px;
     width: 940px;
 }
 
@@ -79,7 +85,11 @@ body, html {
 
 .navigation a {
     text-decoration: none;
-    color: #ffffff;
+    /* color: #ffffff; */
+}
+
+.clicked_nav {
+    color: white;
 }
 
 .navigation a:hover {
@@ -91,18 +101,19 @@ body, html {
     width: 100%;
     height: 6px;
     position: relative;
-    top: 53px;
+    top: 59%;
 }
 
-/* MAIN */
+/* slider */
 
 .slider {
     width: 100%;
-    height: 600px;
+    height: 594px;
     background-color: #f06c64;
     /* shift */
+    scroll-margin-top: 96px;
     position: relative;
-    top: 6px;
+    top: 96px;
 }
 
 .main_wrapper {
@@ -112,7 +123,7 @@ body, html {
     /* size */
     width: 940px;
     /* shift */
-    position: relative;
+    position: absolute; 
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -146,7 +157,7 @@ body, html {
     height: 458px;
     /* shift */
     position: relative;
-    bottom: 19px;
+    bottom: 16px;
 }
 
 .iphone_wrapper {
@@ -287,20 +298,22 @@ body, html {
 
 .main-bottom {
     width: 100%;
-    height: 14px;
+    height: 6px;
     background-color: #ea676b;
-    position: absolute;
-    top: 99%;
+    position: relative;
+    top: 100%;
 }
 
-/* FOOTER */
+/* service */
 
 .service {
     width: 100%;
     height: 496px;
     background-color: #f2f2f2;
+    /* shift */
+    scroll-margin-top: 96px;
     position: relative;
-    top: 6px;
+    top: 12px;
 }
 .service_footer {
     height: 100%;
@@ -317,25 +330,24 @@ body, html {
     font-family: 'Lato-Black';
     margin-top: 59px;
     font-size: 30px;
-    margin-bottom: 21px;
+    margin-bottom: 18px;
     letter-spacing: -1px;
 }
 
 .p_service {            
     font-family: 'Lato-Light';
     font-size: 13pt;
-    line-height: 27px;
+    line-height: 29px;
     text-align: justify;
     letter-spacing: 0.1pt;
 }
 
 .wrapper_support {
-    position: relative;
     display: grid;
+    position: relative;
+    margin-top: -4px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;            
-    padding: 0;
-    margin: 0;
     top: 34px;
     row-gap: 31px;
     column-gap: 20px;
@@ -444,13 +456,21 @@ body, html {
     background-color: #ffffff;
     height: 6px;
     top: 100%;
-    position: absolute;
+    position: relative;
 }
+
+/* Singolo 2 */
+
+/* portfolio */
 
 .portfolio {
     width: 100%;
     height: 864px;
     background-color:#2d303a;
+    /* shift */
+    scroll-margin-top: 96px;
+    position: relative;
+    top: 18px;
 }
 
 .wrapper__portfolio {
@@ -460,7 +480,7 @@ body, html {
 
 
 .title_portfolio {
-    margin-top: 20px;
+    margin-top: -2px;
     padding-top: 59px;    
     margin-bottom: 18px;
     font-size: 29px;
@@ -561,15 +581,19 @@ body, html {
     width: 100%;
     height: 6px;
     position: relative;
-    top: 69px;
+    top: 7.8%;
 }
+
+/* about */
 
 .about-us {
     width: 100%;
     height: 728px;
     background-color: #f2f2f2;
+    /* shift */
+    scroll-margin-top: 96px;
     position: relative;
-    top: 6px;
+    top: 24px;
 }
 
 .wrapper__about {
@@ -798,24 +822,31 @@ body, html {
     top: 11px;    
 }
 
+/* Singolo 3 */
+
+/* contact */
+
 .quote {
     height: 648px;
     background-color: #f06c64;
+    /* shift */
+    scroll-margin-top: 96px;
+    position: relative;
+    top: 24px;
 }
 
-.wrapper {
-    margin: 0 auto;
-    width: 940px;
-}
 
 .bottom-quote {
     height: 6px;
     background-color: #ea676b;
+    position: relative;
+    top: 24px;
 }
 
 .quote h2 {
+    margin-top: 5px;
     padding-top: 61px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     font-size: 29px;
     color: #f0d8d9;
     font-family: "Lato";
@@ -971,9 +1002,13 @@ textarea {
     color: #f0d8d9;
 }
 
+/* footer */
+
 footer {
     height: 76px;
     background-color: #2d303a;
+    position: relative;
+    top: 24px;
 }
 
 footer .wrapper {
@@ -1038,4 +1073,11 @@ footer .wrapper {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url('./assets/singolo2/images/social/l.png');
+}
+
+/* JS */
+
+.active {
+    color: #f06c64; 
+    transition-duration: 0.5s;
 }
