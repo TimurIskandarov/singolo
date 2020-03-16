@@ -22,7 +22,7 @@ nav.addEventListener('click', function(event) {
     // ...и добавим его той, по которой выполнен клик
     target.classList.add('active');
 })
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 
 // Portfolio
 
@@ -64,6 +64,28 @@ setPictures.addEventListener('click', (event) => {
         link.classList.remove('pic_active'); 
     }   
     event.target.classList.add('pic_active');
-    // }
 })
 
+//Get a quote
+
+const subject = document.querySelector('#subject');
+const inSubj =  document.querySelector('#result-subject');
+const desc = document.querySelector('#details');
+const inDesc = document.querySelector('#result-details');
+const btnSubmit = document.querySelector('#submit-button');
+const btnClose = document.querySelector('#message-button');
+const modal = document.querySelectorAll('.modal_message');
+document.forms.feedback_form.onsubmit = function () {  
+    document.querySelector('#result-subject').innerText = /^Singolo$/.test(subject.value) ? 'Singolo' : 'Без темы';
+    document.querySelector('#result-details').innerText = desc.value.includes('Portfolio project') ? 'Portfolio project' : 'Без описания';
+    modal.forEach(item => {
+        item.classList.remove('hidden__message');
+    }) 
+    return false
+};
+
+btnClose.addEventListener('click', (e) => {
+    modal.forEach(item => {
+        item.classList.add('hidden__message');
+    })
+})
