@@ -89,3 +89,106 @@ btnClose.addEventListener('click', (e) => {
         item.classList.add('hidden__message');
     })
 })
+
+
+// let phoneSlider = document.querySelector("body > main > div")
+const arrowPrev = document.querySelectorAll(".arrow_left");
+const arrowNext = document.querySelectorAll(".arrow_right");
+arrowPrev.forEach(element => {
+    element.addEventListener('click', (event) => {
+        const layout = document.querySelectorAll(".background");
+        changeBackgroundPrev();
+    })
+});
+arrowNext.forEach(element => {
+    element.addEventListener('click', (event) => {
+        const layout = document.querySelectorAll(".background");
+        changeBackgroundNext();
+    })
+});
+
+const changeBackgroundPrev = () => {
+    const layout = document.querySelectorAll(".background");
+    let flag = false;
+    let flag_0 = false;
+    layout.forEach(item => {
+        if (item.classList.contains('prev_move')) {
+            item.classList.remove('prev_move');
+            item.classList.add('prev_move_0');
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_2')) {
+            item.classList.remove('prev_move_2');
+            item.classList.add('prev_move_0')
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_0')) {
+            item.classList.remove('prev_move_0');
+            item.classList.add('prev_move_0');
+            flag_0 = true;
+        }
+    })
+    if (!flag || !flag_0) {
+        layout[2].classList.add('prev_move');
+        layout[1].classList.add('prev_move_2');
+        layout[2].classList.remove('prev_move_0');
+        layout[1].classList.remove('prev_move_0');
+        flag = false;
+        return;
+    }
+}
+
+const changeBackgroundNext = (item) => {
+    const layout = document.querySelectorAll(".background");
+    let flag = false;
+    let flag_0 = false;
+    layout.forEach(item => {
+        if (item.classList.contains('prev_move')) {
+            item.classList.remove('prev_move');
+            item.classList.add('prev_move_0');
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_2')) {
+            item.classList.remove('prev_move_2');
+            item.classList.add('prev_move_0')
+            flag = true;
+        }
+        if (item.classList.contains('prev_move_0')) {
+            item.classList.remove('prev_move_0');
+            item.classList.add('prev_move_0');
+            flag_0 = true;
+        }
+    })
+    if (!flag || !flag_0) {
+        layout[0].classList.add('prev_move_2');
+        layout[1].classList.add('prev_move');
+        layout[0].classList.remove('prev_move_0');
+        layout[1].classList.remove('prev_move_0');
+        flag = false;
+        return;
+    }
+}
+
+
+
+const buttonPhone = document.querySelectorAll('.iphone');
+buttonPhone.forEach((item, i) => {
+    item.addEventListener('click', (event) => {
+        if (event.target.classList.contains('btn_iphone')) {            
+            let parent = event.target.parentElement;
+            while (true) {
+                if (parent.classList.contains('wrapper_iphone')) {
+                    parent = parent.querySelector('.screen_layout div');
+                    break;
+                } else {
+                    parent = parent.parentElement;
+                }
+            }
+            if (parent.style.visibility == 'hidden') {
+                parent.style.visibility = 'visible';
+            } else {
+                parent.style.visibility = 'hidden';
+            }
+        }
+    })
+})

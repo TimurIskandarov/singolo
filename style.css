@@ -109,11 +109,13 @@ body, html {
 .slider {
     width: 100%;
     height: 594px;
-    background-color: #f06c64;
+    /* background-color: #f06c64; */
     /* shift */
     scroll-margin-top: 96px;
     position: relative;
     top: 96px;
+    
+    overflow: hidden;
 }
 
 .main_wrapper {
@@ -125,7 +127,7 @@ body, html {
     /* shift */
     position: relative; 
     left: 50%;
-    top: 50%;
+    /* top: 50%; */
     transform: translate(-50%, 15%);
 }
 
@@ -297,7 +299,7 @@ body, html {
     left: 0;
     width: 240px;
     height: 483px;
-    background-image: url('./assets/images/v_phone_shadow.png');
+    background-image: url('./assets/images/v_iphone_shadow.png');
 }
 
 .shadow_horizontal {                    
@@ -306,7 +308,7 @@ body, html {
     transform: rotate(90deg);
     top: 96px;
     left: -122px;
-    background-image: url('./assets/images/h_phone_shadow.png');
+    background-image: url('./assets/images/h_iphone_shadow.png');
 }
 
 .main-bottom {
@@ -405,13 +407,13 @@ body, html {
     position: absolute;
 }
 
-.serv_phone {
+.serv_iphone {
     width: 32px;
     height: 32px;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background: url('./assets/images/phone.png') no-repeat center;
+    background: url('./assets/images/iphone.png') no-repeat center;
     position: absolute;
 }
 
@@ -1002,8 +1004,8 @@ textarea {
     list-style-image: url('./assets/singolo3/geo.png');
 }
 
-.ico_phone {
-    list-style-image: url('./assets/singolo3/phone.png');
+.ico_iphone {
+    list-style-image: url('./assets/singolo3/iphone.png');
 }
 
 .ico_letter {
@@ -1131,4 +1133,524 @@ footer .wrapper {
     background-color: wheat;
     width: 300px;
     height: 150px;
+}
+
+
+/* new */
+
+
+.images__all {
+    display: flex;
+    width: 1020px;
+    height: 594px;
+    flex-wrap: nowrap;
+    
+    position: relative;
+}
+.background {
+    width: 1020px;
+    height: 600px;
+    position: relative;
+}
+.background:last-child {
+    position: absolute;
+    right: -1020px;
+}
+
+.background:first-child {
+
+    position: absolute;
+    left: -1020px;
+}
+.background:nth-child(2) {
+    position: absolute;
+
+}
+.blue_main_wrapper {
+    justify-content: center;
+    width: 1020px;
+    z-index: 4;
+}
+
+.active {
+    background: red;
+}
+.background {
+    width: 1020px;
+    height: 600px;
+    position: relative;
+}
+
+.background_red {
+    background-color: #f06c64;
+}
+
+.background_blue {
+    background-color: #648BF0;
+    width: 1020px;
+}
+
+.main_wrapper {
+    width: 1020px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blue_main_wrapper {
+    justify-content: center;
+    width: 1020px;
+    z-index: 4;
+}
+
+
+
+.prev_move {
+    transform: translateX(-1020px);
+    transition-duration: 2s;
+    /* z-index:6; */
+}
+.prev_move_2 {
+    transform: translateX(1020px);
+    transition-duration: 2s;
+}
+.prev_move_0 {
+    transform: translateX(0px);
+    transition-duration: 2s;
+}
+.next_move {
+    transform: translateX(0px);
+    transition-duration: 3s;
+}
+
+.hidden {
+    /* display: none; */
+    /* transform: translateX(-1020px); */
+}
+
+.little_iphone_left {
+    height: 298px;
+    width: 140px;
+    right: 0;
+    z-index: 1;
+}
+
+.large_iphone_center {
+    right: 0;
+}
+
+.little_wrapper_pnone {
+    height: 298px;
+    width: 140px;
+    border-radius: 19px;
+}
+
+.little_head_iphone {
+    height: 16px;
+}
+
+.little_screen {
+    height: 216px;
+    width: 122px;
+}
+
+.little_screen_layout {
+    background-image: url('./assets/singolo_dom/image_little_phone/phone-vertical-display.png');
+}
+
+.little_outer_circle {
+    height: 6px;
+    width: 6px;
+}
+
+.little_inner_circle {
+    height: 3px;
+    width: 3px;
+}
+
+.little_speaker_iphone {
+    width: 23px;
+    height: 3px;
+}
+
+.little_home_button {
+    width: 27px;
+    height: 27px;
+    top: 14px;
+}
+
+.little_home_button_outer_circle {
+    width: 27px;
+    height: 27px;
+}
+
+.little_home_button_inner_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+.little_shadow {
+    height: 314px;
+    width: 156px;
+    background-image: url('./assets/singolo_dom/image_little_iphone/iphone-vertical-shadow.png');
+}
+
+.large_screen_layout {
+    background-image: url('./assets/singolo_dom/image_large_iphone/iphone-vertical-display.png');
+}
+
+.overlay_blue {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.6;
+    background-color: #648BF0;
+}
+
+
+.wrapper_iphone {
+    border-radius: 28px;
+    width: 215px;
+    height: 458px;
+    background-color: #f2f2f2;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.shadow {
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.v_shadow {
+    left: 0;
+    width: 240px;
+    height: 483px;
+    background-image: url('./assets/images/v_iphone_shadow.png');
+}
+
+.h_shadow {
+    width: 483px;
+    height: 240px;
+    transform: rotate(90deg);
+    top: 96px;
+    left: -122px;
+    background-image: url('./assets/images/h_iphone_shadow.png');
+}
+
+.head_iphone {
+    height: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: -10px;
+}
+
+.outer_circle_cam {
+    width: 10px;
+    height: 10px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    position: relative;
+}
+
+.inner_circle_cam {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #eb5055;
+}
+
+.speaker_iphone {
+    width: 36px;
+    height: 5px;
+    background-color: #acacac;
+    border-radius: 3px;
+}
+
+.screen_layout {
+    width: 188px;
+    height: 333px;
+    background-color: black;
+    border: 2px solid #c6c6c6;
+    top: 12px;
+    position: relative;
+    left: 1px;
+}
+
+.h_screen_layout {
+    background: url('./assets/images/h_screen_layout.png') center no-repeat;
+    transform: rotate(-90deg);
+    width: 337px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -75px;
+}
+
+.v_screen_layout {
+    background: url('./assets/images/v_screen_layout.png') center no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.home_button {
+    position: relative;
+    top: 20px;
+}
+
+.v_home_button {
+    top: 20px;
+}
+
+.h_home_button {
+    top: 18px
+}
+
+.home_button_outer_circle {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #fafafa;
+}
+
+.home_button_inner_circle {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #c2c2c2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+}
+
+.h_iphone {
+    transform: rotate(90deg);
+    right: 62px;
+}
+
+.v_iphone {
+    right: 85px;
+}
+
+
+/* js */
+
+.blue_main_wrapper {
+    justify-content: center;
+    width: 1020px;
+    z-index: 4;
+}
+
+.active {
+    background: red;
+}
+
+.background_blue {
+    background-color: #648BF0;
+    width: 1020px;
+}
+
+.prev_move {
+    transform: translateX(-1020px);
+    transition-duration: 2s;
+    /* z-index:6; */
+}
+.prev_move_2 {
+    transform: translateX(1020px);
+    transition-duration: 2s;
+}
+.prev_move_0 {
+    transform: translateX(0px);
+    transition-duration: 2s;
+}
+.next_move {
+    transform: translateX(0px);
+    transition-duration: 3s;
+}
+
+.hidden {
+    /* display: none; */
+    /* transform: translateX(-1020px); */
+}
+
+.pre_hidden {
+    /* display: none; */
+    /* transform: translateX(1020px); */
+}
+
+.little_iphone_left {
+    height: 298px;
+    width: 140px;
+    right: 0;
+    z-index: 1;
+}
+
+.large_iphone_center {
+    right: 0;
+}
+
+.little_wrapper_pnone {
+    height: 298px;
+    width: 140px;
+    border-radius: 19px;
+}
+
+.little_head_iphone {
+    height: 16px;
+}
+
+.little_screen {
+    height: 216px;
+    width: 122px;
+}
+
+.little_screen_layout {
+    background-image: url('./assets/singolo_dom/image_small_phone/phone-vertical-display.png');
+}
+
+.little_outer_circle {
+    height: 6px;
+    width: 6px;
+}
+
+.little_inner_circle {
+    height: 3px;
+    width: 3px;
+}
+
+.little_speaker_iphone {
+    width: 23px;
+    height: 3px;
+}
+
+.little_home_button {
+    width: 27px;
+    height: 27px;
+    top: 14px;
+}
+
+.little_home_button_outer_circle {
+    width: 27px;
+    height: 27px;
+}
+
+.little_home_button_inner_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+.little_shadow {
+    height: 314px;
+    width: 156px;
+    background-image: url('./assets/singolo_dom/image_small_phone/phone-vertical-shadow.png');
+}
+
+.large_screen_layout {
+    background-image: url('./assets/singolo_dom/image_large_phone/phone-vertical-display.png');
+}
+
+.overlay_blue {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: 0.6;
+    background-color: #648BF0;
+}
+
+/* .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} */
+
+
+.slides {
+    display: flex;
+    width: 1020px;
+    height: 600px;
+    flex-wrap: nowrap;
+    /* transform: translateX(-1020px); */
+    position: relative;
+}
+
+.prev_0 {
+    transform: translateX(0);
+}
+
+.portfolio_active {
+    background-color: blueviolet;
+    color: white;
+}
+.img_active {
+    border: #F06C64 5px solid;
+}
+
+
+.arrow_button_slider {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    height: 100%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* align-items: center; */
+    z-index: 2;
+}
+
+.arrow {
+    border: solid #ca4549;
+    border-width: 0 5px 5px 0;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 5px;
+    border-radius: 2px;
+    /* z-index: 5; */
+}
+.wrapper_arrow_right {
+    z-index: 12;
+}
+.arrow_left {
+    left:4px;
+    transform: rotate(135deg);
+    /* position: absolute; */
+    
+}
+
+.arrow_right {
+    right: 2px;;
+    transform: rotate(-45deg);
+    /* position: absolute; */
+    
+}
+
+.little_iphone_left {
+    height: 298px;
+    width: 140px;
+    right: 0;
+    z-index: 1;
 }
