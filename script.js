@@ -85,6 +85,7 @@ document.forms.feedback_form.onsubmit = function () {
 };
 
 btnClose.addEventListener('click', (e) => {
+    document.forms.feedback_form.reset();
     modal.forEach(item => {
         item.classList.add('hidden__message');
     })
