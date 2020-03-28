@@ -628,7 +628,6 @@ body, html {
     width: 940px;
 }
 
-
 .title_portfolio {
     margin-top: -2px;
     padding-top: 59px;    
@@ -711,13 +710,13 @@ body, html {
 }
 
 .portfolio__picture {
-    width: 223px;
-    height: 190px;       
+    width: 220px;
+    height: 187px;       
 }
 
 .portfolio__picture img {
-    width: 220px;
-    height: 187px;
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio__picture img:hover {
@@ -837,8 +836,10 @@ body, html {
 }
 
 .avatar img{
-    width: 300px;
-    height: 300px;
+    /* width: 300px;
+    height: 300px; */
+    width: 100%;
+    height: 100%;
 }
 
 .name__people {
@@ -977,6 +978,7 @@ body, html {
 /* contact */
 
 .quote {
+    width: 100%;
     height: 648px;
     background-color: #f06c64;
     /* shift */
@@ -1022,11 +1024,16 @@ body, html {
 .layout-2-column {
     margin-top: 48px;
     display: grid;
-    grid-template: 365px / 620px auto;
+    /* grid-template: 365px / 620px auto; */
+    grid-template: auto / 66% 34%;
     column-gap: 20px;
 }
 
 .contact__form {
+    width: 100%;
+}
+
+.contact__info {
     width: 100%;
 }
 
@@ -1120,6 +1127,10 @@ textarea {
     color: #f0d8d9;
     font-family: "Lato";
     letter-spacing: -0.013em;
+}
+
+.info-description-tablet {
+    display: none;
 }
 
 .ico__info {
@@ -1364,6 +1375,43 @@ footer .wrapper {
     }
     .wrapper_support {
         grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    }
+
+    /* portfolio */
+
+    .portfolio {
+        height: 1102px;
+    }
+    .portfolio__grid {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+        height: 811px;
+    }
+    .about__content {        
+        grid-template-rows: 218px 1fr 1fr;
+        grid-template-columns: 218px 218px 218px;                    
+    }
+
+    /* quote */
+
+    input {
+        width: 422px;
+    }
+    textarea {
+        width: 422px;
+        height: 159px;
+    }
+    .info-description-1,
+    .info-description-2, 
+    .info-description-3,
+    .info-description-4 {
+        display: none;
+    }
+    .info-description-tablet {
+        display: inline;
+        font-size: 12px;
+        color: #f0d8d9;
+        font-family: "Lato";
+        letter-spacing: 0.004em;
     }
 
 }
