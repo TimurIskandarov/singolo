@@ -193,3 +193,38 @@ buttonPhone.forEach((item, i) => {
         }
     })
 })
+
+
+const burger = document.querySelector('.line_block');
+const modalPanel = document.querySelector('.modal_window');
+const header = document.querySelector('.h1');
+burger.addEventListener('click', (event) => {        
+        if (burger.classList.contains('line_block_rotate')) {
+            if (modalPanel.classList.contains('active_modal_window')) {
+                modalPanel.classList.add('not_active_modal_window');
+                modalPanel.classList.remove('active_modal_window'); 
+                      
+                header.style.zIndex = '1'
+                header.style.left = '0px';   
+            } else {
+                modalPanel.classList.add('active_modal_window');
+                header.style.zIndex = '12'
+                header.style.left = '-36px';  
+                modalPanel.classList.remove('not_active_modal_window');
+            }
+            burger.classList.remove('line_block_rotate');             
+        } else {
+            burger.classList.add('line_block_rotate');
+            if (modalPanel.classList.contains('active_modal_window')) {
+                modalPanel.classList.add('not_active_modal_window');
+                modalPanel.classList.remove('active_modal_window');
+                header.style.zIndex = '1'
+                header.style.left = '0px'; 
+            } else {
+                modalPanel.classList.add('active_modal_window');
+                header.style.zIndex = '1'
+                header.style.left = '-36px'; 
+                modalPanel.classList.remove('not_active_modal_window');
+            }     
+        }
+});
