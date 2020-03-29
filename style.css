@@ -1382,17 +1382,26 @@ footer .wrapper {
     .portfolio {
         height: 1102px;
     }
+    .bottom-portfolio {
+        top: 8.7%;
+    }
     .portfolio__grid {
         grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
         height: 811px;
     }
     .about__content {        
-        grid-template-rows: 218px 1fr 1fr;
+        grid-template-rows: 218px 2fr 1fr;
         grid-template-columns: 218px 218px 218px;                    
+    }
+    .bottom-about {
+        top: 15px;
     }
 
     /* quote */
 
+    .quote {
+        height: 666px;
+    }
     input {
         width: 422px;
     }
@@ -1412,6 +1421,84 @@ footer .wrapper {
         color: #f0d8d9;
         font-family: "Lato";
         letter-spacing: 0.004em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        max-width: 375px;
+    }
+
+    /* header */
+
+    header {
+        max-width: 375px;
+    }
+    .wrapper {
+        width: 314px;
+    }
+
+    /* slider */
+
+     .all {
+        height: 227px;
+    }
+    .arrow_button_slider {
+        width: 314px;
+        height: 227px;
+    }
+    .wrapper_iphone {
+        width: 80px;
+        height: 168px;
+        border-radius: 18px;
+    }
+    .head_iphone {
+        height: 22px;
+        top: 4px;
+    }
+    .outer_circle_cam {
+        width: 8px;
+        height: 8px;
+        top: 18%;
+    }
+    .inner_circle_cam {
+        width: 4px;
+        height: 4px;
+    }
+    .speaker_iphone {
+        width: 240%;
+        height: 4px;
+    }
+    .h_screen_layout {
+        transform: scaleX(0.66) scaleY(0.84) rotate(-90deg);
+        left: -28px;
+        min-width: 176%;
+    }
+    .home_button_outer_circle {
+        position: relative;
+        top: -19%;
+        width: 40px;
+        height: 40px;
+        transform: scale(0.5);
+    }
+    .home_button {
+        top: 13px;
+    }
+    .v_shadow {
+        width: 88px;
+        height: 170px;
+        top: 10%;
+        left: 10%;
+        transform: scale(1);
+        background-image: url('./assets/375_mobile_images/iphone-vertical-shadow.png');
+    }
+    .h_shadow {
+        width: 88px;
+        height: 170px;
+        top: 10%;
+        left: 10%;
+        transform: scale(1);
+        background-image: url('./assets/375_mobile_images/iphone-horizontal-shadow.png');
     }
 
 }
