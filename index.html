@@ -9,8 +9,16 @@
 <body>
     
     <header class="header">
-
-        <div class="wrapper">
+        <div class="header_wrapper wrapper">
+            <div class="header_button">
+                <div class="inner_header_button">
+                    <div class="line_block">
+                        <div class="inner__line_header_button"></div>
+                        <div class="inner__line_header_button"></div>
+                        <div class="inner__line_header_button"></div>
+                    </div>                    
+                </div>
+            </div>
             <h1 class="h1">SINGOLO<span class="asterisk">*</span></h1>
             <nav class="header__navigation">
                 <ul class="navigation">
@@ -22,6 +30,15 @@
                 </ul>
             </nav>
         </div>
+        <section class="modal_window">
+            <ul class="navigation">
+                <li class="list_new"><a href="#">HOME</a></li>
+                <li class="list_new"><a href="#service">SERVICES</a></li>
+                <li class="list_new"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="list_new"><a href="#about">ABOUT</a></li>
+                <li class="list_new"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </section>
         <div class="header-bottom"></div>
 
     </header>
@@ -268,10 +285,7 @@
             <!-- </section> -->
          
         </section>
-    </section>
-
-    
-  
+    </section> 
 
     <section class="service" id="service">
 
@@ -600,15 +614,6 @@
                         <li class="ico ico_letter"><a class="decoration" href="mailto:info@singolo.com">info@singolo.com</a></li>
                     </ol>                           
 
-                </section>
-
-                <section class="modal_message message_block hidden__message" id="message-block">
-                    <div class="modal_message message_text hidden__message">
-                        <p>Письмо отправлено</p>
-                        <p id="subject-message">Тема: <span id="result-subject"></span></p>
-                        <p id="describe-message">Описание: <span id="result-describe"></span></p>
-                        <button id="message-button">OK</button>
-                    </div>
                 </section>
 
             </div>
